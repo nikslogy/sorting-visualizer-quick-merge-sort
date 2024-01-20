@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    <div class="container">
+        <select id="listTypeDropdown">
+            <!-- Options will be populated by JavaScript -->
+        </select>
+        <input type="text" id="numberInput" placeholder="Enter numbers (comma-separated)">
+        <button id="quickSortBtn">Quick Sort</button>
+        <button id="mergeSortBtn">Merge Sort</button>
+        <button id="bothBtn">Both</button>
+
+        <div id="stepDescription"></div>
+
+        <div id="sortingVisualizations" class="visualizations">
+            <div class="sort-visualization">
+              <h2>Quick Sort</h2>
+              <div id="quickSortContainer" class="array-elements-container"></div>
+              <div id="quickArrowContainer" class="arrow-container"></div>
+              <div id="quickStepDescription" class="step-description"></div> <!-- Quick Sort description -->
+            </div>
+            <div class="sort-visualization">
+              <h2>Merge Sort</h2>
+              <div id="mergeSortContainer" class="array-elements-container"></div>
+              <div id="mergeArrowContainer" class="arrow-container"></div>
+              <div id="mergeStepDescription" class="step-description"></div> <!-- Merge Sort description -->
+            </div>
+          </div>
+
+        <div id="algorithmInfo" class="info-section">
+            <div id="quickSortInfo" class="info">
+                <p>Time Complexity: O(n log n)</p>
+                <p>Space Complexity: O(log n)</p>
+            </div>
+            <div id="mergeSortInfo" class="info">
+                <p>Time Complexity: O(n log n)</p>
+                <p>Space Complexity: O(n)</p>
+            </div>
+        </div>
+
+        <canvas id="sorting-chart"></canvas>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
