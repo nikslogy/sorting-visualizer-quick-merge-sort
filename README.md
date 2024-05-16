@@ -4,9 +4,8 @@
 This project is a simple sorting visualizer for Quick Sort and Merge Sort algorithms. It is developed using JavaScript, HTML, and CSS. The visualizer provides an interactive and visual representation of how these sorting algorithms work, helping users to understand the process step-by-step.
 
 ## Features
-- **Quick Sort Visualization**: Watch the Quick Sort algorithm sort an array of numbers in real-time.
+- **Quick Sort Visualization**: Watch the Quick Sort algorithm sort an array of numbers in real time.
 - **Merge Sort Visualization**: Observe the Merge Sort algorithm in action, merging and sorting elements visually.
-- **Interactive Interface**: User-friendly interface to start, pause, and reset the visualization.
 
 ## Project Structure
 The project consists of three main files:
